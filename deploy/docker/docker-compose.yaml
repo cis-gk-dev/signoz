@@ -185,7 +185,7 @@ services:
     restart: on-failure
 networks:
   dokploy-network:
-    name: dokploy-network
+    external: true
 volumes:
   clickhouse:
     name: signoz-clickhouse
