@@ -183,6 +183,9 @@ services:
       - --dsn=tcp://clickhouse:9000
       - --up=
     restart: on-failure
+networks:
+  dokploy-network:
+    name: dokploy-network
 volumes:
   clickhouse:
     name: signoz-clickhouse
